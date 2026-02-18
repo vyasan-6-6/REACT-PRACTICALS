@@ -3,11 +3,14 @@ import { useEffect, useState } from "react"
  
 
 function App() {
-  const [color,setColor] = useState( "light");
+  const [color,setColor] = useState(()=>{
+    return localStorage.getItem("color") || "light"
+  });
   console.log(color);
    
   useEffect(() => {  
-    document.body.className = color; 
+    document.body.className = color;
+      localStorage.setItem("color",color)
   }, [color])
   
   return (
