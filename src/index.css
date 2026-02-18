@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+body.light {
+color: black;
+background-color: white;
+}
+body.dark{
+    color: white;
+    background-color: black;
+}
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+button{
+    padding: 10px 20px ;
+    cursor: pointer;
+}
