@@ -1,7 +1,9 @@
+import Accordion from "./components/Accordin"
 
 const App = () => {
   return (
-    <div>App</div>
+   <>
+   <Accordion/></>
   )
 }
 
