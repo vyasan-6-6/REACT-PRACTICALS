@@ -3,10 +3,13 @@
 body.light {
 color: black;
 background-color: white;
+transition: all 0.3s ease;
 }
 body.dark{
     color: white;
     background-color: black;
+    transition: all 0.3s ease;
+
 }
 .container{
     text-align: center;

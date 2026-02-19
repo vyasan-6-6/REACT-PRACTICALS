@@ -1,17 +1,9 @@
-import { useEffect, useState } from "react"
+import useTheme from "./context/contextProvider"
 
  
 
 function App() {
-  const [color,setColor] = useState(()=>{
-    return localStorage.getItem("color") || "light"
-  });
-  console.log(color);
-   
-  useEffect(() => {  
-    document.body.className = color;
-      localStorage.setItem("color",color)
-  }, [color])
+const {setColor,color} = useTheme()
   
   return (
     <div className="container">
