@@ -6,6 +6,8 @@ export const ContextProvider = ({children})=>{
     const [color,setColor] = useState(()=>{
     return localStorage.getItem("color") || "light"
   }); 
+  
+  const [show,setShow] = useState(false) 
    
   useEffect(() => {  
     document.body.className = color;
@@ -13,7 +15,7 @@ export const ContextProvider = ({children})=>{
   }, [color]);
 
   const value = {
-    setColor,color
+    setColor,color,show,setShow
   }
     return <themeContext.Provider value={value}>{children}</themeContext.Provider>
 }
