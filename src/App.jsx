@@ -1,10 +1,11 @@
-import FormValidation from "./components/FormValidation"
+import Tabs from "./components/Tabs"
 
+ 
  
 const App = () => {
   return (
    <>
-   <FormValidation/>
+   <Tabs />
    </>
 
   )
