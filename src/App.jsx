@@ -1,11 +1,10 @@
-import Accordion from "./components/Accordin"
-import CharacterCounter from "./components/CharacterCounter"
-import Model from "./components/Model"
+ 
+import SearchFilter from "./components/SearchFilter"
 
 const App = () => {
   return (
    <>
-   <CharacterCounter/>
+   <SearchFilter/>
    </>
 
   )
