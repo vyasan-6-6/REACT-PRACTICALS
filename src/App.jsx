@@ -1,11 +1,9 @@
-import Tabs from "./components/Tabs"
-
- 
+import Pagination from "./components/Pagination" 
  
 const App = () => {
   return (
    <>
-   <Tabs />
+   <Pagination />
    </>
 
   )
