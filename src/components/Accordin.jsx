@@ -1,7 +1,8 @@
+ 
 import { useState } from "react"
 
 const Accordin = () => {
-    const [show,setShow] = useState(null)
+ const [show , setShow] = useState(null)
   const faqs = [
      {
       question: "What is React?",
@@ -16,24 +17,23 @@ const Accordin = () => {
       answer: "An accordion shows and hides content when clicked.",
     },
   ]
-  const toggleHandle = (i)=>{
-   setShow(show===i ?null :i)
-  }
+   const toggleHandler = (index)=>{
+setShow(show ===index ? null : index)
+   }
     return (
     <>
-   <div  className="w-[400px] mt-[50px] mx-auto">
-        <h2>FAQ</h2>
-        {faqs.map((faq,index)=>(
-            <div key={index} className="cursor-pointer border border-gray-400 mb-2.5 p-2.5 " >
-                <div onClick={()=>toggleHandle(index)} className="mt-2.5">{faq.question}</div>
-                {show ===index &&(
-                    <div>{faq.answer}</div>
-                )}
-            </div>
-        
-        ))}
+    <div className="w-100 mt-12.5 mx-auto">
+        <h2>FAQ's</h2>
+ {faqs.map((faq,index)=>(
+    <div key={index} className="border border-gray-500" onClick={()=>toggleHandler(index)}>
+        <strong>{faq.question}</strong>
+      {show===index && (
+          <div>{faq.answer}</div>
+      )}
     </div>
-    
+
+ ))}
+    </div>
     </>
   )
 }
