@@ -22,17 +22,22 @@ pre === images.length-1 ? 0 : pre+1
   }
 
   return (
-    <div>
+<>
+    <div className="mx-auto w-200 mt-25">
+        <h2>Image Slider</h2>
+
       <div>
         <img
+        className="w-150 h-75 object-cover rounded-lg"
         src={images[currentIndex]}
         />
       </div>
-      <div>
+      <div className="mt-3.75">
         <button onClick={previous}>pre</button>
-        <button onClick={nextslide}>nextSlide</button>
+        <button onClick={nextslide} className="ml-2.5">nextSlide</button>
       </div>
        </div>
+        </>            
   )
 }
 

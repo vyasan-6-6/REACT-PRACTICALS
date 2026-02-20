@@ -1,10 +1,10 @@
-import ImageSlider from "./components/ImageSlider"
+import FormValidation from "./components/FormValidation"
 
-  
+ 
 const App = () => {
   return (
    <>
-   <ImageSlider/>
+   <FormValidation/>
    </>
 
   )
