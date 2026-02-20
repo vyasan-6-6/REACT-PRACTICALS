@@ -4,12 +4,18 @@ import { useState } from "react"
 
 const CharacterCounter = () => {
     const [text,setText] = useState('');
-const maxlimit = 10; 
+const maxlimit = 100; 
   return (
     <div className="w-100 mx-auto  mt-2.5 ">
     <h1>Character live counter</h1>
     <textarea
-    onChange={(e)=>setText(e.target.value)}
+  onChange={(e) => {
+  if (e.target.value.length <= maxlimit) {
+    setText(e.target.value);
+  }
+}}
+placeholder="Typing something..."
+
     rows={5}
     className="p-4 w-full font-bold"
     />
