@@ -16,7 +16,7 @@ const DigitalClock = () => {
     
   return (
     <div style={{textAlign:"center", marginTop:"100px"}}>
-       {time.toLocaleTimeString()}
+       {time.toLocaleTimeString("en-US",{hour12:false})}
     </div>
   )
 }
