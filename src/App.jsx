@@ -1,10 +1,10 @@
  
-import SearchFilter from "./components/SearchFilter"
+import DigitalClock from "./components/DigitalClock" 
 
 const App = () => {
   return (
    <>
-   <SearchFilter/>
+   <DigitalClock/>
    </>
 
   )
