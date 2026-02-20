@@ -1,10 +1,10 @@
- 
-import DigitalClock from "./components/DigitalClock" 
+import ImageSlider from "./components/ImageSlider"
 
+  
 const App = () => {
   return (
    <>
-   <DigitalClock/>
+   <ImageSlider/>
    </>
 
   )
