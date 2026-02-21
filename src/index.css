@@ -20,3 +20,24 @@ button{
     padding: 10px 20px ;
     cursor: pointer;
 } */
+
+:root{
+    --bg:white,
+    --text:black,
+}
+
+[Data-theme="dark"]{
+    color: white;
+    background-color: black;
+}
+
+[Data-theme="blue"]{
+    color:rosybrown;
+    background-color: blue;
+}
+
+body{
+    color: var(--text);
+    background-color: var(--bg); 
+    transition: all 0.3s ease;
+}
