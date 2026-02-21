@@ -13,8 +13,9 @@ const ThemeSlice = createSlice({
     },
     reducers:{
         changeTheme:(state)=>{
-            state.mode = state.mode==="light" ? "dark":"light"
-        }
+            const nextmode = state.mode==="light" ? "dark" :state.mode=== "dark"? "blue":"light";
+                  state.mode =nextmode;
+            }
     }
 });
 

@@ -12,8 +12,8 @@ const Theme = () => {
        
         width:"100vw",
         height:"100vh",
-        color:mode === 'light' ? "black":"white",
-        backgroundColor:mode==="light"?"white":"black"
+        color:mode === 'light' ? "black" :mode==="dark" ?"#e0e1dd":"red",
+        backgroundColor:mode==="light"?"white": mode ==="dark" ? "#0d1b2a" : "royalblue",
     }}> <div className=" mx-auto text-center">
 
         <h1>{mode.toUpperCase() }mode</h1>
