@@ -1,11 +1,11 @@
-import ThemeChange from "./components/ThemeChange"
+ import Theme from "./Redux-components/Theme"
 
   
  
 const App = () => {
   return (
    <>
-   <ThemeChange />
+   <Theme />
    </>
 
   )
