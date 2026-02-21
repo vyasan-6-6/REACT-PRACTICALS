@@ -1,10 +1,11 @@
-import DebouncedSearch from "./components/DebounceSearchInput"
-import Pagination from "./components/Pagination" 
+import ThemeChange from "./components/ThemeChange"
+
+  
  
 const App = () => {
   return (
    <>
-   <DebouncedSearch />
+   <ThemeChange />
    </>
 
   )

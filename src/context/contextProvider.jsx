@@ -20,10 +20,8 @@ export const ContextProvider = ({children})=>{
     return <themeContext.Provider value={value}>{children}</themeContext.Provider>
 }
 
-const useTheme = ()=>{
+ export const useTheme = ()=>{
     return useContext(themeContext);
 }
- 
-export default useTheme;
-
+  
 

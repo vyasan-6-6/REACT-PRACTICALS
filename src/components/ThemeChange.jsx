@@ -1,4 +1,4 @@
-import useTheme from "./context/contextProvider"
+import {useTheme} from "../context/contextProvider"
 
  
 
